@@ -13,30 +13,16 @@
 	
 <link rel="stylesheet" type="text/css" href="css/main.css">
 	
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map');
-        var mapOptions = {
-          center: new google.maps.LatLng(44.5403, -78.5463),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-	
 <title> Assignment 5 </title>
 </head>
 
 <body>
 	
 <header> <!-- put bg image on header -->
-	<nav class="row">
-		<header class="col-1-4 float-left">
-			<h1><img src="img/endless-summer-logo.png" alt=""></h1> <!-- place logo -->
-		</header>
+	<nav class="row smooth-scroll">
+		<div class="col-1-4 float-left">
+			<h1><a href="#"><img src="img/endless-summer-logo.png" alt=""></a></h1> <!-- place logo -->
+		</div>
 		<div class="col-1-3 float-right">
 			<ul>
 				<li><a href="#packages">surf</a></li>
@@ -51,8 +37,8 @@
 		<p>cultivate a love and respect for the ocean by building confidence, developing character and inspiring stoke through safety, fun and learning.</p>
 	</div>
 	
-	<div> <!-- place transparent bg color -->
-		<p><a href="#">Learn to Surf!</a></p>
+	<div> <!-- place transparent bg color on this anchor -->
+		<p><a href="#packages">Learn to Surf!</a></p>
 	</div>
 </header>
 	
@@ -66,13 +52,13 @@
 </div>
 	
 <!-- packages -->
-<section id="packages" class="wrapper">
+<section id="packages" class="wrapper smooth-scroll">
 	<div class="row">
 		<div class="col-1-2 float-left">
 			<header>
-				<h2>5 Day Deluxe Package | $320</h2>
+				<h2><span>5 Day Deluxe Package &VerticalSeparator; </span> $320</h2>
 			</header>
-			<p>Our guides love teaching the 5 day course! This course is suited for all ages and teaches techniques to make you a competent surfer! It is aimed at people who really want to get into surfing as each lesson is different and the course is packed with content. We will work on showing you how to sit up and spin your board prior to paddling for a wave.</p>
+			<p><span>Our guides love teaching the 5 day course!</span> This course is suited for all ages and teaches techniques to make you a competent surfer! It is aimed at people who really want to get into surfing as each lesson is different and the course is packed with content. We will work on showing you how to sit up and spin your board prior to paddling for a wave.</p>
 			<p>1 x 2.5 hour PRIVATE LESSON (From Pick up to drop off) Finish on a high note with your last session completely tailored to your individual needs to really get the most out of your surfing.</p>
 			<p><a href="">Buy now!</a></p>
 		</div>
@@ -83,18 +69,18 @@
 		<div class="col-1-2 float-left">
 			<div class="circle"></div> <!-- place image and circle here -->
 			<header>
-				<h2>1/2 Day Learn to Surf Adventure $65</h2>
+				<h2><span>1/2 Day Learn to Surf Adventure</span> $65</h2>
 			</header>
-			<p>1 x 4 hour Surf Safari We will teach you all the necessary steps to get you up and surfing and riding waves on your first lesson. Our Instructors use hands on teaching techniques to get you standing very quickly!</p>
+			<p><span>1 x 4 hour Surf Safari</span> We will teach you all the necessary steps to get you up and surfing and riding waves on your first lesson. Our Instructors use hands on teaching techniques to get you standing very quickly!</p>
 			<p><a href="">Buy now!</a></p>
 		</div>
 	
 		<div class="col-1-2 float-right">
 			<div class="circle"></div> <!-- place image and circle here -->
 			<header>
-				<h2>2 Day Progressive Surf Lesson $115</h2>
+				<h2><span>2 Day Progressive Surf Lesson</span> $115</h2>
 			</header>
-			<p>2 x 4 hour surf safariLearn to improve stance, Pop up technique and introduce paddling. The aim of lesson two is to improve consistency and length of ride so we focus on weight distribution how to slow and speed the surfboard up.</p>
+			<p><span>2 x 4 hour surf safari</span> Learn to improve stance, Pop up technique and introduce paddling. The aim of lesson two is to improve consistency and length of ride so we focus on weight distribution how to slow and speed the surfboard up.</p>
 			<p><a href="">Buy now!</a></p>
 		</div>
 	</div>
@@ -103,24 +89,24 @@
 		<div class="col-1-2 float-left">
 			<div class="circle"></div> <!-- place image and circle here -->
 			<header>
-				<h2>3 Day Ultimate Wave Rider $155</h2>
+				<h2><span>3 Day Ultimate Wave Rider</span> $155</h2>
 			</header>
-			<p>3 x 4 hour surf safari Surf at different locations! We aim to improve Paddling technique and timing, Pop up technique, stance and work on slowing and speeding up your surfboard, and introduce a Frontside turn and a Backside turn.</p>
+			<p><span>3 x 4 hour surf safari</span> Surf at different locations! We aim to improve Paddling technique and timing, Pop up technique, stance and work on slowing and speeding up your surfboard, and introduce a Frontside turn and a Backside turn.</p>
 			<p><a href="">Buy now!</a></p>
 		</div>
 	
 		<div class="col-1-2 float-right">
 			<div class="circle"></div> <!-- place image and circle here -->
 			<header>
-				<h2>4 Day Epic Surf Experience $185</h2>
+				<h2><span>4 Day Epic Surf Experience</span> $185</h2>
 			</header>
-			<p>4 x 4 hour surf safari Introducing the S-turns (This is doing multiple turns on one wave) and surfing with Flow! We aim to start catching unbroken waves if the conditions on the day allow.</p>
+			<p><span>4 x 4 hour surf safari</span> Introducing the S-turns (This is doing multiple turns on one wave) and surfing with Flow! We aim to start catching unbroken waves if the conditions on the day allow.</p>
 			<p><a href="">Buy now!</a></p>
 		</div>
 	</div>
 </section>
 
-<a href="">
+<a href="http://www.theinertia.com/surf/8-awesome-ways-to-prepare-for-a-surf-trip/" target="_blank">
 	<div id="article"> <!-- place bg image here for article -->
 		<div class=" wrapper col-1-2 float-none">
 			<p>Get ready to surf, read this article!</p>
@@ -128,7 +114,7 @@
 	</div>
 </a>
 	
-<section id="about" class="wrapper">
+<section id="about" class="wrapper smooth-scroll">
 	<div class="col-1-2 float-none">
 		<p>	Our lessons are specifically designed to teach you to surf at your own pace in a relaxed environment to build further self-confidence.</p>
 	</div>
@@ -165,8 +151,8 @@
 	
 	<div class="row col-3-4">
 		<form>
-			<label for="subscribe">Subscribe to Our Emails</label>
-			<input id="subscribe" type="subscribe" name="subscribe">
+			<label for="email-subscribe">Subscribe to Our Emails</label>
+			<input id="email-subscribe" type="email" name="email-subscribe">
 			
 			<p><a href="">Subscribe</a></p>
 		</form>
@@ -175,11 +161,11 @@
 
 <!-- map -->
 <div>
-	<div id="map" style="width:100%;height:400px">
+	<div id="map" style="width:100%;height:400px"> </div>
 </div>
 
-<section id="contact" class="wrapper row">
-	<form>
+<div id="contact" class="wrapper row smooth-scroll">
+	<form class="col-1-2">
 		<label for="first-name">First Name</label>
 		<input id="first-name" type="text" name="first-name">
 		
@@ -188,21 +174,23 @@
 
 		<label for="email">Email</label>
 		<input id="email" type="email" name="email">
+	</form>
 		
+	<form class="col-1-2">
 		<label for="subject">Subject</label>
 		<input id="subject" type="text" name="subject">
 		
 		<label for="message">Message</label>
 		<input id="message" type="text" name="message">
 		
-		<p><a href=""></a></p>
+		<p><a href="">Submit</a></p>
 	</form>
-</section>
+</div>
 	
 <footer> <!-- bg color -->
 	<div class="wrapper row">
 		<div class="col-1-3 float-left">
-			<p><a href="">+64 7-825 7873</a></p>
+			<p><a href="tel:+6478257873">+64 7-825 7873</a></p>
 		</div>
 		
 		<div class="col-1-3 float-none">
@@ -218,37 +206,25 @@
 	</div>
 </footer>
 
-
-	
-	
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-jQuery(document).ready(function($){
-	
-	// Smooth scroll home nav
-		$('#smooth-scroll').on('click', 'a', function(e) {
-			// prevent default anchor click behavior
-   			e.preventDefault();
-		
-		   // store hash
-		   var hash = this.hash;
-			
-			$('html, body').animate({
-			   scrollTop: $(this.hash).offset().top-0
-			 }, 500, function(){
-		
-			   // when done, add hash to url
-			   // (default click behaviour)
-			   window.location.hash = hash;
-			 });
-		
-		});
 
-	
-});
-</script>	
-	
+<script type="text/javascript" src="js/functions.js"> </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script> <!-- place at end of html -->
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
 	
 	
 </body>
