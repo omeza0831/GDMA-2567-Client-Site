@@ -1,4 +1,4 @@
- @charset "UTF-8";
+@charset "UTF-8";
 /* CSS Document */
 
 /*--------------------------------------------------------------
@@ -30,22 +30,27 @@
 /* ==========
 1.0 - Typography
 ========== */
-ul li a, a {
-	text-decoration: none;
+span {
+	display: none;
 }
 
-h2, label, footer, p a, nav, #cta p {
-	font-family: 'Amatic SC', cursive;
-}
-
-p, #about ul li {
+header p, #bg-intro p, #packages .row:first-child p, #about .col-3-4 {
 	font-family: 'Josefin Sans', sans-serif;
+}
+
+#packages .row:nth-child(2), #packages .row:last-child, #about ul li, #about .col-1-3 p {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	letter-spacing: .05rem;
+}
+
+b {
+	font-weight: 900;
 }
 
 #bg-intro div p {
 	font-size: 1.75rem;
 	font-weight: 200;
-	line-height: 2.5rem;
+	line-height: 2.25rem;
 }
 
 #about .col-3-4:first-child {
@@ -54,13 +59,9 @@ p, #about ul li {
 }
 
 #packages p, #about p a, footer p a, #contact form label,  #contact form p a, #cta p, #about .col-1-3:first-child ul li, #about .col-1-3:first-child p, #about .col-1-3:nth-child(2) p, #about .col-2-3 ul, #about form label {
-	font-size: 1.5rem;
-	line-height: 2.25rem;
+	font-size: 1.25rem;
+	line-height: 2rem;
 	font-weight: 300;
-}
-
-h2 {
-	font-size: 3rem;
 }
 
 #article p a, #about .col-3-4:first-child, nav li, header .col-3-4 {
@@ -71,12 +72,13 @@ h2 {
 	font-size: 2.5rem;
 }
 
-nav li {
-	font-weight: bold;
+/*----- 1.1 - Headings -----*/
+h2 {
+	font-size: 3rem;
 }
 
-nav ul li a:hover, #article p a:hover, footer p a:hover {
-	border-bottom: .15rem solid #f2f2e2;
+h2, label, footer, p a, nav, #cta p {
+	font-family: 'Amatic SC', cursive;
 }
 
 header .float-none:last-of-type p a:hover, #cta p:hover  {
@@ -92,7 +94,6 @@ header .col-3-4, #packages p a {
 	text-transform: uppercase;
 }
 
-
 /*----- 1.3 - Buttons -----*/
 #packages p a, #about p a, #contact form p a {
 	padding: .5rem 5rem;
@@ -100,14 +101,10 @@ header .col-3-4, #packages p a {
 
 #cta  {
 	padding: 1.75rem 0;
-	margin-top: 11rem;
+	margin-top: 15rem;
 }
 
 /*----- 1.4 - Forms -----*/
-#contact form input {
-	width: 100%;
-}
-
 #contact form input, #about form input {
 	padding: .75rem;
 }
@@ -128,6 +125,18 @@ header .col-3-4, #packages p a {
 #about .col-1-3:first-child ul:first-of-type  {
 	list-style-type: none;
 	padding: 0;
+}
+
+ul li a, a {
+	text-decoration: none;
+}
+
+nav li {
+	font-weight: bold;
+}
+
+nav ul li a:hover, #article p a:hover, footer p a:hover {
+	border-bottom: .15rem solid #f2f2e2;
 }
 
 
@@ -151,7 +160,6 @@ header .col-3-4, #packages p a {
 }
 
 #map {
-	width: 100%;
 	height: 25rem;
 }
 
@@ -174,18 +182,6 @@ header .col-3-4, #packages p a {
 
 .float-none {
 	float: none;
-}
-
-nav ul {
-	text-align: right;
-}
-
-#packages .row:first-of-type p, #packages .row:first-of-type h2 {
-	text-align: left;
-}
-
-#about .col-1-3:first-child ul:first-of-type li, header ul li, footer ul li  {
-	list-style: none;
 }
 
 /*----- 5.1 - Background Colors -----*/
@@ -235,7 +231,48 @@ header .float-none:last-of-type p a:hover, #about .col-3-4, #packages p, #about 
 
 
 /*----- 5.4 - Alignments -----*/
-header p, header .col-1-4:first-child, #about .col-1-3:first-child p, #about .col-1-3:nth-child(2) p, #about .col-1-3:first-child ul:first-of-type, footer ul  {
+
+#packages .row:first-child img {
+	height: 33rem;
+}
+
+#packages .row:nth-child(2) p, #packages .row:nth-child(3) p {
+	margin: 0 2rem;
+}
+
+#packages .row:nth-child(2) p {
+	margin-bottom: 3rem;
+}
+
+#packages .row:last-of-type .col-1-2:first-child p:last-of-type {
+    margin-top: 1.3rem;
+}
+
+#about .col-1-4 img:first-of-type {
+	height: 10rem;
+}
+
+#about .row:last-of-type .col-1-3:first-child img {
+	height: 18rem;
+}
+
+#about .col-3-4 {
+	margin-left: 5rem;
+}
+
+nav ul {
+	text-align: right;
+}
+
+#packages .row:first-of-type p, #packages .row:first-of-type h2 {
+	text-align: left;
+}
+
+#about .col-1-3:first-child ul:first-of-type li, header ul li, footer ul li  {
+	list-style: none;
+}
+
+header p, header .col-1-4:first-child, #about .col-1-3:first-child p, #about .col-1-3:nth-child(2) p, #about .col-1-3:first-child ul:first-of-type, footer ul {
 	margin: 0;
 }
 
@@ -243,8 +280,16 @@ header p, header .col-1-4:first-child, #about .col-1-3:first-child p, #about .co
 	margin-bottom: 10rem;
 }
 
-#about .col-3-4 {
+#about .col-3-4, #map, #contact form input {
 	width: 100%;
+}
+
+#about .col-3-4 p {
+	margin: 0px 11rem;
+}
+
+#packages .row:nth-child(2), #packages .row:last-child {
+	padding: 0 2rem;
 }
 
 nav ul {
@@ -267,8 +312,12 @@ header div:last-of-type .float-right:last-of-type, header .col-3-4 {
 	margin-top: 1.75rem;
 }
 
-#packages .row:last-of-type .col-1-2:last-child p {
-	margin-top: 3.1rem;
+#packages .row:last-of-type .col-1-2:last-child p:first-of-type {
+	margin-top: 1.9rem;
+}
+
+#packages .row:last-of-type .col-1-2:last-child p:last-of-type {
+	margin-top: 3.3rem;
 }
 
 #packages .row:first-of-type h2 {
@@ -276,7 +325,7 @@ header div:last-of-type .float-right:last-of-type, header .col-3-4 {
 }
 
 #packages .row:first-of-type .col-1-2:first-child {
-	padding-right: 5rem;
+	padding: 0 5rem;
 }
 
 #packages .row:nth-child(3) h2 {
@@ -333,7 +382,7 @@ nav li:nth-child(2), nav li:nth-child(3), nav li:last-child {
 } 
 
 #packages, #about, #contact {
-	margin: 10rem auto;
+	margin: 8rem auto;
 }
 
 #packages .row:nth-child(2), #packages .row:last-child {
@@ -349,11 +398,11 @@ footer ul li:first-child {
 }
 
 #about form label {
-	margin-right: 14rem;
+	margin-right: 28rem;
 }
 
 #about form input {
-	margin-right: 2rem;
+	margin-right: -9rem;
 }
 
 @media screen and (max-width:480px) {
@@ -369,6 +418,10 @@ footer ul li:first-child {
 		line-height: 2.75rem;
 	}
 	
+	#packages p, #contact form label, #cta p, #about .col-1-3:first-child ul li, #about .col-1-3:first-child p, #about .col-1-3:nth-child(2) p, #about .col-2-3 ul, #about form label {
+	font-size: 1rem;
+	}
+	
 	h2, #packages .col-1-2 h2:first-of-type, #about .col-1-3, #contact form label, #about form label, footer .col-1-3, nav .col-2-3 ul  {
 		text-align: center;
 	}
@@ -379,7 +432,7 @@ footer ul li:first-child {
 	
 /*----- 1.3 - Buttons -----*/
 	#cta  {
-	margin-top: 5.5rem;
+	margin-top: 10.5rem;
 	padding: 3rem 0;
 }
 	
@@ -409,8 +462,15 @@ footer ul li:first-child {
 		padding: 0;
 	}
 	
-	#about form label, #packages p:first-child a, #about ul, footer p {
+	#about form label, #packages p:first-child a, #about ul, footer p, #about .col-3-4 p, #about form input, #about .col-3-4 {
 		margin: 0;
+	}
+	
+	#packages .row p, #about p, #contact p {
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	
 	#contact .col-1-2 {
