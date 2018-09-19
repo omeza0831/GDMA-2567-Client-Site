@@ -277,7 +277,7 @@ header p, header .col-1-4:first-child, #about .col-1-3:first-child p, #about .co
 }
 
 #about div.row  {
-	margin-bottom: 10rem;
+	margin-bottom: 6rem;
 }
 
 #about .col-3-4, #map, #contact form input {
@@ -353,7 +353,7 @@ header div:last-of-type .float-right:last-of-type, header .col-3-4 {
 }
 
 #about .col-3-4:first-child {
-	padding: 0 5rem 10rem 5rem;
+	padding: 0 5rem 6rem 5rem;
 }
 
 nav li, footer ul li, #about form p  {
@@ -373,7 +373,7 @@ h1 {
 	margin-left: 6.5rem;
 }
 
-#packages p, #packages h2, header .col-3-4, #bg-intro div, footer .col-1-3:nth-child(2), #article .col-1-2, #about .col-3-4:first-child, #about form, #cta p {
+#packages p, #packages h2, header .col-3-4, #bg-intro div, footer .col-1-3:nth-child(2), #article .col-1-2, #about .col-3-4:first-child, #about form, #cta p, #article p  {
 	text-align: center;
 }
  
@@ -386,7 +386,7 @@ nav li:nth-child(2), nav li:nth-child(3), nav li:last-child {
 }
 
 #packages .row:nth-child(2), #packages .row:last-child {
-	margin-top: 10rem;
+	margin-top: 6rem;
 }
 
 footer ul li, footer .col-1-3:first-child {
@@ -408,7 +408,7 @@ footer ul li:first-child {
 @media screen and (max-width:480px) {
 	
 	.wrapper {
-		width: 95%;
+		width: 100%;
 	}
 	/* ==========
 1.0 - Typography
@@ -418,7 +418,7 @@ footer ul li:first-child {
 		line-height: 2.75rem;
 	}
 	
-	#packages p, #contact form label, #cta p, #about .col-1-3:first-child ul li, #about .col-1-3:first-child p, #about .col-1-3:nth-child(2) p, #about .col-2-3 ul, #about form label {
+	#packages p, #about .col-1-3:first-child ul li, #about .col-1-3:first-child p, #about .col-1-3:nth-child(2) p, #about .col-2-3 ul, #about form label {
 	font-size: 1rem;
 	}
 	
@@ -430,15 +430,20 @@ footer ul li:first-child {
 		font-size: 1.5rem;
 	}
 	
+	#cta p, #packages p a, #contact form label {
+		font-size: 2rem;
+	}
+	
 /*----- 1.3 - Buttons -----*/
 	#cta  {
 	margin-top: 10.5rem;
 	padding: 3rem 0;
 }
 	
-	#packages p a, #about p a, #contact form p a {
-	padding: .5rem 9.9rem;
+	#packages p a, #contact form p a {
+	padding: 1.5rem 5rem;
 }
+
 	
 /*----- 1.4 - Forms -----*/
 
@@ -446,8 +451,12 @@ footer ul li:first-child {
 	/* ==========
 5.0 - Utility
 ========== */
-	header .col-1-4:first-of-type, #packages .row .col-1-2, #about .col-1-2, #about .col-1-3, #about .col-2-3, #about .col-3-4, #contact form, footer .col-1-3, header nav .col-2-3, header .col-3-4, #bg-intro .wrapper div, #bg-intro .wrapper, #about .col-3-4 p, #contact form .col-1-2, #about .col-1-4, #about .col-3-4 input {
+	header .col-1-4:first-of-type, #packages .row .col-1-2, #about .col-1-2, #about .col-1-3, #about .col-2-3, #about .col-3-4, #contact form, footer .col-1-3, header nav .col-2-3, header .col-3-4, #bg-intro .wrapper div, #bg-intro .wrapper, #about .col-3-4 p, #contact form .col-1-2, #about .col-1-4, #packages .row:first-child img, #about img, .full-width  {
 		width: 100%;
+	}
+	
+	#about .col-3-4 input, #about .col-3-4 p {
+		width: 90%;
 	}
 	
 	header nav ul {
@@ -458,15 +467,28 @@ footer ul li:first-child {
 		float: none;
 	}
 	
-	header nav ul, #article p a, #about .col-3-4:first-child, footer p a, footer .col-1-3:last-child ul, nav .col-2-3 ul li, #packages .row:first-of-type .col-1-2:first-child, #packages .col-1-2, footer .col-1-3, #contact .col-1-2 {
+	#packages .row:first-of-type .col-1-2:first-child p:nth-child(3), #packages .row:nth-child(2) p:nth-child(3), #packages .row:last-of-type p:nth-child(3) {
+		margin-bottom: 3rem;
+	}
+	
+	header nav ul, #article p a, #about .col-3-4:first-child, footer p a, footer .col-1-3:last-child ul, nav .col-2-3 ul li, #packages .row:first-of-type .col-1-2:first-child, #packages .col-1-2, footer .col-1-3, #contact .col-1-2, #about .col-1-3, #packages .row:nth-child(2), #packages .row:last-child {
 		padding: 0;
 	}
 	
-	#about form label, #packages p:first-child a, #about ul, footer p, #about .col-3-4 p, #about form input, #about .col-3-4 {
+	#about form label, #packages p:first-child a, #about ul, footer p, #about .col-3-4 p, #about form input, #about .col-3-4, #packages .row:nth-child(2) p, #packages .row:nth-child(3) p  {
 		margin: 0;
 	}
 	
-	#packages .row p, #about p, #contact p {
+	.full-width {
+		display: block;
+		text-align: center;
+	}
+	
+	.full-width {
+		padding: 1rem 0;
+	}
+	
+	#packages .row p, #about p, #contact p, .full-width {
 		margin-left: 0;
 		margin-right: 0;
 		padding-left: 0;
@@ -486,7 +508,11 @@ footer ul li:first-child {
 	}
 	
 	header h1 a img  {
-		margin-left: 4.5rem;
+		margin-left: 7.5rem;
+	}
+	
+	#packages .row:first-child p:first-of-type, #packages .row:first-child p:nth-child(3), #about .col-1-3 p:last-of-type {
+		margin: 0 1rem;
 	}
 
 	#about .col-3-4:first-child, #about .col-1-3 {
@@ -495,6 +521,10 @@ footer ul li:first-child {
 	
 	#packages .row section:first-child {
 		margin-bottom: 2rem;
+	}
+	
+	#about .col-3-4 p {
+		margin-left: 1.5rem;
 	}
 	
 	#packages .row:nth-child(3) .col-1-2:last-child, #packages .row:nth-child(2) .col-1-2:last-child {
@@ -519,6 +549,12 @@ footer ul li:first-child {
 	#map {
 		height: 13rem;
 	}
+	
+	#about .row:last-of-type .col-1-3:first-child img, #about .col-1-4 img:first-of-type {
+	height: 25rem;
+}
+	
+
 	
 	/*----- 5.1 - Background Colors -----*/
 #bg-intro {
